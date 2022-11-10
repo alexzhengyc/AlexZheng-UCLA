@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
+import planet from "../../Assets/planet.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Timeline from "./Timeline";
 
 function Home() {
   return (
@@ -16,11 +18,11 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Welcome to My Planet!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  {/* 👋🏻 */}
+                  👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading">
                 I'M
                 <strong className="main-name"> Alex Zheng</strong>
               </h1>
@@ -32,7 +34,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={planet}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
@@ -41,7 +43,11 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      
+      <Container fluid className="home-section" id="Timeline">
+        <Timeline />
+      </Container>
+      
     </section>
   );
 }
