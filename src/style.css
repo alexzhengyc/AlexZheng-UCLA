@@ -1,23 +1,35 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(255, 255, 255, 0.582),
+    rgba(255, 255, 255, 0.904)
   );
 
-  --image-gradient: linear-gradient(
+  /* image mask  */
+  --image-gradient: linear-gradient( 
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(252, 252, 252, 1),
+    rgba(255, 255, 255, 1)
   );
 
-  --imp-text-color: #c770f0;
+  /* --imp-text-color: #000000; */
+  --gen-bg-color: #fcfcfc;
+  --gen-text-color: #000000;
+  --imp-text-color: #323232;
+  --sup-color: #666666;
 }
 
+/* all elements with className='purple' */
 .purple {
   color: var(--imp-text-color) !important;
 }
 
+.italic {
+  font-style: italic;
+  color: var(--sup-color);
+}
+
+/* select the focus button */
 button:focus {
   box-shadow: none !important;
 }
@@ -32,8 +44,8 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-color: var(--gen-bg-color);
+  /* background-image: url(./Assets/pre.svg); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -52,23 +64,23 @@ button:focus {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #909090;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(119, 118, 119, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(38, 38, 38, 0.911);
   border-radius: 12px;
 }
 
@@ -76,7 +88,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #ffffffa9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -97,7 +109,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #fafafa !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -151,7 +163,7 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: #080808 !important;
 }
 
 .logo {
@@ -160,7 +172,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: #000000 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -191,10 +203,11 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  opacity: 0.8;
+  height: 4px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--imp-text-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -257,7 +270,8 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-color: var(--gen-bg-color);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -266,13 +280,14 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: left;
+  color: var(--gen-text-color);
+  text-align: center;
 }
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  position: center;
+  /* padding-left: 50px !important; */
 }
 
 .heading-name {
@@ -281,17 +296,18 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  font-size: 6em;
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--imp-text-color) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--sup-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -402,7 +418,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--gen-bg-color);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -428,7 +444,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--gen-text-color) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -532,7 +548,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: var(--gen-text-color) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -546,8 +562,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background-color: var(--gen-bg-color);
+  color: var(--gen-text-color) !important;
 }
 
 .tech-icons {
@@ -583,14 +599,14 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--gen-text-color) !important;
   background-color: transparent !important;
 }
 
 .about-activity {
   list-style: none !important;
   text-align: left !important;
-  padding-left: 1px !important;
+  padding-left: 0px !important;
 }
 
 @media (max-width: 767px) {

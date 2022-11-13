@@ -7,8 +7,14 @@ function Particle() {
       id="tsparticles"
       params={{
         particles: {
+          color:{
+            value: "000000"
+          },
+          shape: {
+            type: "circle"
+          },
           number: {
-            value: 160,
+            value: 100,
             density: {
               enable: true,
               value_area: 1500,
@@ -31,6 +37,14 @@ function Particle() {
               speed: 1,
               opacity_min: 0.05,
             },
+            animation: {
+              enable: true,
+              minimumValue: 0.05 
+            },
+            random: {
+              enable: true,
+              minimumValue: 0.05,
+            }
           },
         },
         interactivity: {

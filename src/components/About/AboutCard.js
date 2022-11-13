@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { MdComputer } from "react-icons/md";
+import {GiPokerHand} from "react-icons/gi";
+import {GiFootprint} from "react-icons/gi";
+import {GrRobot} from "react-icons/gr";
 
 function AboutCard() {
   return (
@@ -8,30 +11,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            I'm a first-year master's student majoring in Computer Engineering at UCLA. I received my BEng in Automation & Robotics at Zhejiang University, China.<br/>
+            <br/>
+            I have rich experience in machine learning, planning and control of robots, software development.<br/>
+            <br/>
+            Apart from my technical abilities, I minored in Innovation and Entrepreneurship and have confidence in my leadership and communication skills.<br/>
+            <br/>
+            And here are some things I would like to do in my spare time:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <GrRobot /> Learning newest tech -- AI, web3, robots
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <MdComputer /> Doing cool machine learning project
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <GiPokerHand /> Playing piano & boardgames 
+            </li>
+            <li className="about-activity">
+              <GiFootprint /> Exploring the city -- who doesnt like LA
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ textAlign: "justify"}}>
+            <br/>
+            <span className="italic">"We are meant to make a difference to the world!"</span>
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          
         </blockquote>
       </Card.Body>
     </Card>
