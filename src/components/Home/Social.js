@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Particle from "../Particle";
-import Type from "./Type";
-
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -11,19 +8,12 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home() {
+function Social() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <strong className="main-name"> Alex Zheng</strong>
-          <Type />
-        </Container>
-      </Container>
-        
-      <Container fluid className="home-about-section" id="about">      
-        <Container className="home-about-social">
+    <Container fluid className="home-about-section" id="about">      
+      <Row>
+        <Col md={12} className="home-about-social">
+
           <ul className="home-about-social-links">
             <li className="social-icons">
               <a
@@ -66,12 +56,10 @@ function Home() {
               </a>
             </li>
           </ul>
-        </Container>
-      </Container >
 
-
-    </section>
+        </Col>
+      </Row>
+    </Container>
   );
 }
-
-export default Home;
+export default Social;

@@ -14,7 +14,7 @@ function Particle() {
             type: "circle"
           },
           number: {
-            value: 100,
+            value: 120,
             density: {
               enable: true,
               value_area: 1500,
