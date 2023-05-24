@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @AlexZheng-UCLA
-- 👀 I’m interested in Perception and Control of agent(robot) 
-- 🌱 I’m currently learning Signal and Systems, Optimization, Reinforcement Learning in UCLA 
-- 👀 I’m interested in Perception and Control of agent 
-- 🌱 I’m currently learning Signal and Systems, Machine Learning, Deep Learning in UCLA 
-- 💞️ I’m looking to collaborate on computer vision, advanced control algorithms projects
+- 👀 I’m interested in Industry-level Machine Learning Application
+- 🌱 I’m currently learning Signal and Systems, Machine Learning in UCLA  
+- 💻 I’m building product based on stable diffusion and large pre-trained models
+- 💞️ looking to collaborate on generative AI projects
 - 📫 Contact me for anything at alexzheng1017@gmail.com | LinkedIn: www.linkedin.com/in/alexzheng1017
